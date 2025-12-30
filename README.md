@@ -2,7 +2,7 @@
 
 **A Product of Converso Empire** - Revolutionizing Digital Communication
 
-![Converso Empire Banner](https://via.placeholder.com/800x200/007BFF/FFFFFF?text=Converso+Empire:+Building+the+Future)
+<img src="https://9f7onqvz26sb8xlk.public.blob.vercel-storage.com/logo.png" width="180" alt="Converso Empire Logo"/>
 
 > "Empowering businesses and individuals with cutting-edge WhatsApp automation technology"
 
@@ -12,24 +12,24 @@ Welcome to the future of WhatsApp video messaging! This powerful API, proudly de
 
 ## 🌟 Key Features
 
-✅ **Direct URL Video Sending** - Send videos to WhatsApp without downloading to your server
-✅ **Advanced Audio Merging** - Combine video and audio tracks using FFmpeg for professional results
-✅ **Smart File Handling** - Automatic detection of optimal sending method based on file size
-✅ **QR Code Authentication** - Secure and easy WhatsApp connection setup
-✅ **Auto-Reconnection** - Never lose connection with automatic reconnection capabilities
-✅ **Enterprise-Grade Error Handling** - Comprehensive error management and detailed logging
-✅ **Health Monitoring** - Built-in health check endpoint for system monitoring
-✅ **Complete API Documentation** - Full API reference with examples and best practices
-✅ **Production-Ready** - Built for scalability, reliability, and performance
+* ✅ **Direct URL Video Sending** - Send videos to WhatsApp without downloading to your server
+* ✅ **Advanced Audio Merging** - Combine video and audio tracks using FFmpeg for professional results
+* ✅ **Smart File Handling** - Automatic detection of optimal sending method based on file size
+* ✅ **QR Code Authentication** - Secure and easy WhatsApp connection setup
+* ✅ **Auto-Reconnection** - Never lose connection with automatic reconnection capabilities
+* ✅ **Enterprise-Grade Error Handling** - Comprehensive error management and detailed logging
+* ✅ **Health Monitoring** - Built-in health check endpoint for system monitoring
+* ✅ **Complete API Documentation** - Full API reference with examples and best practices
+* ✅ **Production-Ready** - Built for scalability, reliability, and performance
 
 ## 🎯 Use Cases
 
-🔹 **Business Automation** - Automate video marketing campaigns via WhatsApp
-🔹 **Content Distribution** - Deliver video content to subscribers and customers
-🔹 **Customer Support** - Send tutorial and help videos instantly
-🔹 **Media Sharing** - Share video content with friends, family, and groups
-🔹 **Educational Platforms** - Distribute course videos and educational content
-🔹 **Social Media Integration** - Cross-platform video sharing solutions
+* 🔹 **Business Automation** - Automate video marketing campaigns via WhatsApp
+* 🔹 **Content Distribution** - Deliver video content to subscribers and customers
+* 🔹 **Customer Support** - Send tutorial and help videos instantly
+* 🔹 **Media Sharing** - Share video content with friends, family, and groups
+* 🔹 **Educational Platforms** - Distribute course videos and educational content
+* 🔹 **Social Media Integration** - Cross-platform video sharing solutions
 
 ## 📋 System Requirements
 
@@ -54,9 +54,8 @@ For optimal performance, ensure your system meets these requirements:
 The fastest way to get started with our WhatsApp Video Sender API:
 
 ```bash
-# Step 1: Clone the official Converso Empire repository
-git clone https://github.com/Converso-Empire/whatsapp-ffmpeg-video-api.git
-cd whatsapp-ffmpeg-video-api
+# Step 1: Download the Docker Compose file directly
+curl -LO https://raw.githubusercontent.com/Converso-Empire/whatsapp-ffmpeg-video-api/main/docker-compose.yml
 
 # Step 2: Start the application with Docker Compose
 docker compose up -d
@@ -66,6 +65,7 @@ docker compose ps
 
 # Step 4: Check application health
 curl http://localhost:5000/api/health
+
 ```
 
 **What happens during deployment:**
@@ -223,7 +223,7 @@ performance:
 | `chat_id` | string | ✅ Yes | WhatsApp chat ID | "923164525711@s.whatsapp.net" |
 | `caption` | string | ❌ No | Message caption | "Check this amazing video!" |
 | `filename` | string | ❌ No | Custom filename | "my-video.mp4" |
-| `audio_url` | string | ❌ No (required for "merge") | URL to audio file | "https://example.com/audio.mp3" |
+| `audio_url` | string | ❌ No (but required for "merge") | URL to audio file | "https://example.com/audio.mp3" |
 | `priority` | string | ❌ No | Processing priority | "high", "normal", "low" |
 | `retry_on_failure` | boolean | ❌ No | Auto-retry failed sends | true |
 
@@ -831,7 +831,6 @@ docker compose up -d
 
 ### 🛡️ Security Best Practices
 
-```markdown
 1. **Network Security**
    - Use firewall rules to restrict access
    - Consider VPN for remote access
@@ -851,7 +850,7 @@ docker compose up -d
    - Set up intrusion detection
    - Monitor for unusual activity
    - Regular security audits
-```
+
 
 ### 📈 Performance Optimization
 
@@ -894,7 +893,7 @@ docker compose up -d
 
 ```bash
 # Step 1: Clone the repository
-git clone https://github.com/muhammadgohar/whatsapp-ffmpeg-video-api.git
+git clone https://github.com/Converso-Empire/whatsapp-ffmpeg-video-api.git
 cd whatsapp-ffmpeg-video-api
 
 # Step 2: Install dependencies
@@ -975,7 +974,6 @@ logger.error('Failed to send video:', error);
 
 ### 📚 API Development Tips
 
-```markdown
 1. **Endpoint Design**
    - Use RESTful conventions
    - Keep URLs simple and intuitive
@@ -995,11 +993,10 @@ logger.error('Failed to send video:', error);
    - Validate all inputs
    - Sanitize user data
    - Implement rate limiting
-```
 
 ### 🤝 Contributing Guidelines
 
-```markdown
+
 1. **Fork the repository**
 2. **Create a feature branch**
    git checkout -b feature/your-feature-name
@@ -1015,7 +1012,7 @@ logger.error('Failed to send video:', error);
 - [ ] Updates documentation
 - [ ] Handles edge cases
 - [ ] Maintains backward compatibility
-```
+
 
 ### 🔬 Debugging Techniques
 
@@ -1156,7 +1153,6 @@ docker stats whatsapp-video-api
 
 **Best Practices:**
 
-```markdown
 1. **Network Security**
    - Use firewall rules: ufw allow 5000/tcp
    - Implement IP whitelisting
@@ -1171,25 +1167,15 @@ docker stats whatsapp-video-api
    - Add API key validation
    - Implement rate limiting
    - Use HTTPS with valid certificates
-```
+
 
 ### 📞 Support Resources
 
-```markdown
 **Official Support Channels:**
-- Email: support@conversoempire.com
-- Documentation: https://conversoempire.com/docs
-- Community Forum: https://community.conversoempire.com
+- Email: support@conversoempire.world
+- 24/7 Support: https://wa.me/923164525711
+- Critical Issues: emergency@conversoempire.world
 
-**Self-Help Resources:**
-- Knowledge Base: https://conversoempire.com/kb
-- API Reference: https://conversoempire.com/api-docs
-- Status Page: https://status.conversoempire.com
-
-**Emergency Contacts:**
-- 24/7 Support: +1 (555) 123-4567
-- Critical Issues: emergency@conversoempire.com
-```
 
 ### 🔄 Recovery Procedures
 
@@ -1262,7 +1248,7 @@ SOFTWARE.
 
 **🏛️ About Converso Empire**
 
-![Converso Empire Logo](https://via.placeholder.com/200x100/007BFF/FFFFFF?text=Converso+Empire)
+<img src="https://9f7onqvz26sb8xlk.public.blob.vercel-storage.com/logo.png" width="180" alt="Converso Empire Logo"/>
 
 **Empire of Innovation, Creativity & Intelligence**
 
@@ -1286,63 +1272,28 @@ At Converso Empire, we believe in the power of technology to transform lives, bu
 
 ### 💡 Core Values
 
-```markdown
-✅ **Innovation First** - We push boundaries and challenge the status quo
-✅ **Quality Obsession** - Excellence in every line of code and every pixel
-✅ **Customer Focus** - Solving real problems with real impact
-✅ **Collaboration** - Building together, growing together
-✅ **Integrity** - Transparency, honesty, and ethical practices
-✅ **Continuous Learning** - Always evolving, always improving
-```
+* ✅ **Innovation First** - We push boundaries and challenge the status quo
+* ✅ **Quality Obsession** - Excellence in every line of code and every pixel
+* ✅ **Customer Focus** - Solving real problems with real impact
+* ✅ **Collaboration** - Building together, growing together
+* ✅ **Integrity** - Transparency, honesty, and ethical practices
+* ✅ **Continuous Learning** - Always evolving, always improving
 
 ### 🌟 Why Choose Converso Empire?
 
-```markdown
-🔹 **Cutting-Edge Technology** - Built on the latest advancements
-🔹 **Enterprise-Grade Reliability** - Designed for mission-critical applications
-🔹 **Developer-Friendly** - Intuitive APIs and comprehensive documentation
-🔹 **Global Support** - 24/7 assistance from our expert team
-🔹 **Innovation Pipeline** - Continuous updates and new features
-🔹 **Community Driven** - Powered by a global network of innovators
-```
-
-### 🤝 Join the Converso Empire
-
-```markdown
-**Careers:** https://conversoempire.com/careers
-**Partnerships:** https://conversoempire.com/partners
-**Investor Relations:** https://conversoempire.com/investors
-**Community:** https://community.conversoempire.com
-```
+* 🔹 **Cutting-Edge Technology** - Built on the latest advancements
+* 🔹 **Enterprise-Grade Reliability** - Designed for mission-critical applications
+* 🔹 **Developer-Friendly** - Intuitive APIs and comprehensive documentation
+* 🔹 **Global Support** - 24/7 assistance from our expert team
+* 🔹 **Innovation Pipeline** - Continuous updates and new features
+* 🔹 **Community Driven** - Powered by a global network of innovators
 
 **📞 Contact Us**
 
-```markdown
-📧 General Inquiries: info@conversoempire.com
-📞 Support Hotline: +1 (555) 123-4567
-🌐 Website: https://conversoempire.com
-📍 Headquarters: Silicon Valley, California
-```
-
-**💬 Social Media**
-
-```markdown
-🐦 Twitter: @ConversoEmpire
-📘 Facebook: /ConversoEmpire
-📸 Instagram: @ConversoEmpire
-🔗 LinkedIn: /company/conversoempire
-🎥 YouTube: /ConversoEmpire
-```
-
-**📢 Stay Updated**
-
-Subscribe to our newsletter for the latest innovations, product updates, and exclusive content from Converso Empire:
-
-```bash
-curl https://newsletter.conversoempire.com/subscribe \
-  -X POST \
-  -d '{"email": "your@email.com", "interests": ["api", "innovation"]}'
-```
+📧 General Inquiries: info@conversoempire.world
+📞 Support Hotline: [+923164525711](https://wa.me/923164525711)
+🌐 Website: https://conversoempire.world
+📍 Headquarters: Qilla Gujjar Singh, Lahore, Pakistan
 
 ---
 
@@ -1352,4 +1303,4 @@ This WhatsApp Video Sender API represents the pinnacle of our innovation in digi
 
 > "At Converso Empire, we don't just build software - we build the future."
 
-**© 2023 Converso Empire. All rights reserved.**
+**© 2025-2030 Converso Empire. All rights reserved.**
