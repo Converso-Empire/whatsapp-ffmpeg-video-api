@@ -2,7 +2,7 @@
 FROM node:18-alpine
 
 # Install FFmpeg and other dependencies
-RUN apk add --no-cache ffmpeg
+RUN apk add --no-cache ffmpeg git
 
 # Create app directory
 WORKDIR /app
